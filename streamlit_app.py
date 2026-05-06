@@ -57,7 +57,7 @@ def get_gdp_data():
 
     return gdp_df
 
-gdp_df = get_gdp_data2()
+gdp_df = get_gdp_data()
 
 # -----------------------------------------------------------------------------
 # Draw the actual page
