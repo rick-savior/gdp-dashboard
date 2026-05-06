@@ -12,16 +12,6 @@ st.set_page_config(
 # -----------------------------------------------------------------------------
 # Declare some useful functions.
 
-st.title("📊 Dashboard de Análise de Dados")
-st.write("Variáveis: **tempo**, **distância**, **valor** e **nomes**.")
-
-st.sidebar.header("Filtros")
-nomes = st.sidebar.multiselect(
-    "Selecione nomes",
-    options=df["nome"].unique(),
-    default=df["nome"].unique()
-)
-
 @st.cache_data
 def get_gdp_data():
     """Grab GDP data from a CSV file.
